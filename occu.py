@@ -1,6 +1,6 @@
 #occu.py 9/22
 from flask import Flask, render_template
-from occupations import L, randomVal
+from occupations import L, randomVal, site
 
 app = Flask(__name__)
 
@@ -10,7 +10,7 @@ def firstPg():
 
 @app.route("/occupations")
 def secondPg():
-    return render_template('occu.html', t="Occupations", l = L)
+    return render_template('occu.html', t="Occupations", l = L, random = randomVal, s = site)
 
 if __name__ == "__main__":
     app.debug = True
