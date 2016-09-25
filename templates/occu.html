@@ -6,10 +6,22 @@
   </head>
 
   <body>
-    {% for item in l %}
-     {{ item }}
-     <br>
-    {% endfor %}
+    <b><h1><center> Occupations </center></h1></b>
+    <h3><center> description </center></h3>
+
+    <table border = 1>
+      <tr>
+	<th> Job Class </th>
+	<th> Percentage </th>
+      </tr>
+      {% for item in l %}
+      <tr>
+	<td> {{ item[0] }} </td>
+	<td><center> {{ item[1] }} </center></td>
+      </tr>
+      {% endfor %} 
+    </table>
+    
   </body>
 
 </html>

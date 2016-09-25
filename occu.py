@@ -10,12 +10,7 @@ def firstPg():
 
 @app.route("/occupations")
 def secondPg():
-    return render_template('occu.html', t="Occupations", l=L)
-    #return str(L) + randomVal
-
-@app.route("/thirdpg")
-def thirdPg():
-    return "this is the third page" 
+    return render_template('occu.html', t="Occupations", l = L)
 
 if __name__ == "__main__":
     app.debug = True
