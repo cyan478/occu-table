@@ -31,9 +31,16 @@ def modList(dic):
 def randomizer(alist):
     random.shuffle(alist)
     chosen = alist[random.randint(0,len(alist)-1)]
-    global site 
-    site = chosen[1]
+    return chosen
+
     return chosen[0]
+
+def randomVal(alist):
+    return randomizer()
+
+def site(chosen):
+    site = chosen[1]
+    return site
 
 L = listify(L, reader) #list of occ
 dic = addToDict(L, dic) #dict
