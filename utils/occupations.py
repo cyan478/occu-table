@@ -1,7 +1,7 @@
 import csv
 import random
 
-hi = open("occupations.csv", "rb")
+hi = open("data/occupations.csv", "rb")
 reader = csv.reader(hi)
 dic = {}
 L = []

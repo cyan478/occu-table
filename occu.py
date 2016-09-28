@@ -1,6 +1,6 @@
 #occu.py 9/22
 from flask import Flask, render_template
-from utils/occupations import L, randomVal, site
+from utils.occupations import L, randomVal, site
 
 app = Flask(__name__)
 
